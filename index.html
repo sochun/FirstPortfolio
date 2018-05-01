@@ -6,6 +6,7 @@
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
                 
                 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
     body {
@@ -24,7 +25,7 @@
     .float-right{
         float: right;
     }
-    .dupa{
+    .flex-end{
         display : flex;
         justify-content: flex-end;
         margin-right: 8%;
@@ -48,6 +49,50 @@
     .navbar-toggler:not(:disabled):not(.disabled) {
          margin-right: 8%;   
     }
+    .bg-overlay {
+        height: 855px;
+        background-image: url("https://78.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #000; 
+    }
+    .intro-message {
+        padding-top: 20%;
+        padding-bottom: 20%;
+        text-align: center;
+    }
+    h1 {
+    color: #B6B6B6;
+    text-shadow: 2px 1px 2px #000;
+    font-size: 80px;
+    }
+    hr {
+        border: 1px outset #B6B6B6;
+        box-shadow: 1px 1px 1px #000;
+    }
+    .btn {
+        color: #000;
+        border: 2px outset #000;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+    .btn:hover {
+        border: 2px outset #000;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        background-color: #000;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+    .fa-fw {
+        padding-right: 15px;
+    }
 </style>
     </head>
     
@@ -55,14 +100,14 @@
       
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <a class="navbar-brand name" href="https://www.linkedin.com/in/piotr-soko%C5%82owski-713946130/" target="_blank">Piotr Sokołowski</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             
-          <div class="collapse navbar-collapse float-right dupa" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse float-right flex-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home</a>
+              <a class="nav-item nav-link active" href="#home">Home</a>
                       <a class="nav-item nav-link" href="#">O mnie</a>
                       <a class="nav-item nav-link" href="#">Portfolio</a>
                       <a class="nav-item nav-link" href="#">Kontakt</a>
@@ -70,6 +115,40 @@
           </div>
       </nav>
       
+      <div class="bg-overlay">
+
+          <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                           <div class="intro-message">
+                               
+                                <h1>Piotr Sokołowski - Portfolio</h1>
+                                
+                                <h3>Junior Front-End Developer</h3>
+                                
+                                <hr class="intro-divider">
+                                
+                                <ul class="inline-list">                                    
+                                    <li class="btn btn-light btn-lg"><a href="https://github.com/sochun" target="_blank"><i class="fa fa-github fa-fw"></i>Github</a></li>
+                                    <li class="btn btn-light btn-lg"><a href="https://www.linkedin.com/in/piotr-soko%C5%82owski-713946130/" target="_blank"><i class="fa fa-linkedin fa-fw"></i>Linkedin</a></li>
+                                    <li class="btn btn-light btn-lg"><a href="CV/PS.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i>CV</a></li>
+                                </ul>
+                                
+                            </div>
+
+                    </div>
+
+                 </div>
+
+          </div>
+                              
+     </div>
+                               
+                               
+                               
                                 
     </body>
     
