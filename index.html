@@ -12,6 +12,16 @@
     body {
         background-color: #d3d3d3;
     }
+    body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
     .red {
         background-color: red;
     }
@@ -56,7 +66,14 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        background-color: #000; 
+    }
+    .bg-overlay2 {
+        height: 855px;
+        background-image: url("https://68.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_540.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
     .intro-message {
         padding-top: 20%;
@@ -93,6 +110,23 @@
     .fa-fw {
         padding-right: 15px;
     }
+    h2.section-heading {
+        margin-top: 100px;
+        font-size: 3em;
+        font-weight:  bold;
+    }
+    p.about-me {
+        margin-top:25px;
+        font-size: 17px;
+    }
+    .head-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 120px;
+    }
+    .head-img-radius {
+        border-radius: 100%;
+    }
 </style>
     </head>
     
@@ -108,12 +142,14 @@
           <div class="collapse navbar-collapse float-right flex-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#home">Home</a>
-                      <a class="nav-item nav-link" href="#">O mnie</a>
+                      <a class="nav-item nav-link" href="#about">O mnie</a>
                       <a class="nav-item nav-link" href="#">Portfolio</a>
                       <a class="nav-item nav-link" href="#">Kontakt</a>
             </div>
           </div>
       </nav>
+      
+      <a name="#home"></a>
       
       <div class="bg-overlay">
 
@@ -146,8 +182,39 @@
           </div>
                               
      </div>
+                              
+    <a name="about"></a>
                                
-                               
+     <div class="bg-overlay2">
+         
+         <div class="container">
+             
+             <div class="row">
+                 
+                 <div class="col-"1></div>
+                 
+                 <div class="col-5">
+                    <div class="clearfix"></div>
+                     
+                        <h2 class="section-heading">O mnie</h2>
+                                         
+                        <p class="about-me">Technik informatyk, który po przeprowadzce do Warszawy zmienił branże najpierw na rozrywkową - Kasyno, a następnie sprzedaż - LG Electronics. Po to by uświadomić sobie, że chcę rozwiać się w branży IT. Zacząłem pracę jako serwisant IT gdzie poznałem „informatykę” od strony sprzętowej. W tej chwili jestem Account Managerem i zajmuję się wdrażaniem klienta w obsługę sklepu internetowego, a także pomagam uporać się z ich problemami. W wolnych chwilach rozwijam swoje umiejętności w tworzeniu stron. Na ta chwile mam opanowane: HTML, CSS, Bootstrap na poziomie dobrym i jestem w trakcie nauki JavaScript i jQuerry. Nie ma dnia w którym nie myślałbym co mogę jeszcze poprawić by stawać się lepszy. Szukam nowych wyzwań gdzie jeszcze bardziej podniosę swoje umiejętności, a nauka czegoś nowego to dla mnie zawsze wyzwanie, które chętnie przyjmuje. Interesują mnie nowe technologie, ale także sporty zimowe - narty, motoryzacja i zwierzęta. Stawiam na własny rozwój, ale lubię również spotkać się ze znajomymi lub zwiedzać Polskę. Zawodowo chciałbym zająć się tworzeniem stron i do tego dążę.</p>
+                                          
+                 </div>
+                 
+                 <div class="col-5">
+                     
+                     <div class="head-img">
+                         <img class="head-img-radius" src="img/head-img.jpg">
+                     </div>
+                 
+                 <div class="col-1"></div>
+                 
+             </div>
+             
+         </div>
+         
+     </div>                          
                                
                                 
     </body>
