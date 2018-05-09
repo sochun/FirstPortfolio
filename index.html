@@ -139,7 +139,7 @@ h6 {
     }
     p.about-me {
         margin-top:25px;
-        font-size: 17px;
+        font-size: 14px;
     }
     .head-img {
         display: flex;
@@ -176,6 +176,20 @@ h6 {
         color: white;
         text-align: center;
         margin: 0;
+    }
+    .margin100{
+        margin-top: 80px;
+    }
+    #margin-bottom {
+        margin-bottom: 30px;
+    }
+    .form-control {
+        margin-bottom: 5px;
+    }
+    .flex-center {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
     }
 </style>
     </head>
@@ -249,7 +263,7 @@ h6 {
                      
                         <h2 class="section-heading">O mnie</h2>
                                          
-                        <p class="about-me">Technik informatyk, który po przeprowadzce do Warszawy zmienił branże najpierw na rozrywkową - Kasyno, a następnie sprzedaż - LG Electronics. Po to by uświadomić sobie, że chcę rozwiać się w branży IT. Zacząłem pracę jako serwisant IT gdzie poznałem „informatykę” od strony sprzętowej. W tej chwili jestem Account Managerem i zajmuję się wdrażaniem klienta w obsługę sklepu internetowego, a także pomagam uporać się z ich problemami. W wolnych chwilach rozwijam swoje umiejętności w tworzeniu stron. Na ta chwile mam opanowane: HTML, CSS, Bootstrap na poziomie dobrym i jestem w trakcie nauki JavaScript i jQuerry. Nie ma dnia w którym nie myślałbym co mogę jeszcze poprawić by stawać się lepszy. Szukam nowych wyzwań gdzie jeszcze bardziej podniosę swoje umiejętności, a nauka czegoś nowego to dla mnie zawsze wyzwanie, które chętnie przyjmuje. Interesują mnie nowe technologie, ale także sporty zimowe - narty, motoryzacja i zwierzęta. Stawiam na własny rozwój, ale lubię również spotkać się ze znajomymi lub zwiedzać Polskę. Zawodowo chciałbym zająć się tworzeniem stron i do tego dążę.</p>
+                        <p class="about-me">Jakiś czas temu zacząłem pracę jako serwisant IT gdzie poznałem „informatykę” od strony sprzętowej. W tej chwili jestem Account Managerem i wdrażam klienta w obsługę sklepu internetowego, a także pomagam uporać się z ich problemami. W wolnych chwilach rozwijam swoje umiejętności w tworzeniu stron. Na ta chwile mam opanowane: HTML, CSS, Bootstrap na poziomie dobrym i jestem w trakcie nauki JavaScript i jQuerry. Nie ma dnia w którym nie myślałbym co mogę jeszcze poprawić by stawać się lepszy. Szukam nowych wyzwań gdzie jeszcze bardziej podniosę swoje umiejętności, a nauka czegoś nowego to dla mnie zawsze wyzwanie, które chętnie przyjmuje. Interesują mnie nowe technologie, ale także sporty zimowe - narty, motoryzacja i zwierzęta. Stawiam na własny rozwój, ale lubię również spotkać się ze znajomymi lub zwiedzać Polskę. Zawodowo chciałbym zostać Front-End Developerem.</p>
                                           
                  </div>
                  
@@ -387,7 +401,41 @@ h6 {
         
         <div class="bg-overlay4">
             
-            
+            <div class="container">
+                
+                <div class="row">
+                   
+                   <div class="col-2"></div>
+                    
+                    <div class="col-8 margin100">
+                       
+                       <h2 id="margin-bottom">Napisz do mnie :</h2>
+                        
+                        <form>
+                        
+                           <label for="input-label">Imię:</label>
+                            <input type="text" class="form-control" placeholder="Podaj Imię">
+                            <label for="input-label">Nazwisko:</label>
+                            <input type="text" class="form-control" placeholder="Podaj Nazwisko">
+                            <label for="input-label">Email:</label>
+                            <input type="email" class="form-control" placeholder="Podaj Email">
+                            <label for="input-label">Numer telefonu:</label>
+                            <input type="tel" class="form-control" placeholder="Podaj numer telefonu">
+                            <label for="input-label">Wpisz wiadomość:</label>
+                           <textarea class="form-control" placeholder="Wpisz treść wiadmości" cols="30" rows="5"></textarea>
+                                                                                                                
+                            <center><button class="btn btn-primary flex-center" onclick="send()">Wyślij wiadomość</button></center>
+
+
+                        </form>
+                        
+                    </div>
+                    
+                    <div class="col-2"></div>
+                    
+                </div>
+                
+            </div>
             
         </div>
         
@@ -398,7 +446,11 @@ h6 {
                     
                     
                 </footer>
-                                        
+                   <script>
+                        function send() {
+                            alert("Wiadomość została wysłana. Dziekuję!");
+                        }
+                    </script>                     
     </body>
     
 </html>
