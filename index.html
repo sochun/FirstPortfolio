@@ -23,9 +23,6 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-    .red {
-        background-color: red;
-    }
     .name {
         margin-left: 8%;
         font-family: 'Lato', sans-serif;
@@ -190,6 +187,20 @@ h6 {
         display: flex;
         align-items: center;
         margin-top: 20px;
+    }
+    .inline-block {
+        display: inline-block;
+        margin-right: 25px;
+        border-bottom: 1px solid black;
+    }
+    .footer {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer {
+        font-size: 15px;
     }
 </style>
     </head>
@@ -441,9 +452,28 @@ h6 {
         
     </a>
     
+                    
                 <footer>
                     
-                    
+                    <div class="container footer">
+                        
+                        <div class="row">
+                            
+                            <div class="col-12">
+                                <ul class="inline-list"> 
+                                    <li class="inline-block"><a href="#home">Home</a></li>
+                                    <li class="inline-block"><a href="#about">O mnie</a></li>
+                                    <li class="inline-block"><a href="#portfolio">Portfolio</a></li>
+                                    <li class="inline-block"><a href="#contact">Kontakt</a></li>
+                                </ul>
+                                
+                                <p id="footer">Stworzył - Piotr Sokołowski - przy pomocy <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
                     
                 </footer>
                    <script>
